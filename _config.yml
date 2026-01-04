@@ -1,17 +1,17 @@
-# Site settings
-title: Hux Blog
+# 网站设置
+title: Yao Blog
 SEOTitle: 小妖的博客 | Hux Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计"
-url: "https://huangxuan.me" # your host, for absolute URL
-baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
+email: 507509503@qq.com
+description: "这里是 @Yao小妖 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员"
+keyword: "小妖, Yao, @01, 小妖的博客, Yao Blog, 博客, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计, Spring Boot, AI, MySQL, Vue"
+url: "https://mryaolimin.github.io/" # 你的主机地址，用于绝对 URL
+baseurl: "" # 例如，如果你的博客托管在 'host/blog'，则为 '/blog'
 
-# Publish posts or collection documents with a future date.
+# 发布日期在未来（future date）的文章或集合文档
 future: true
 
-# SNS settings
+# 社交媒体设置
 RSS: false
 weibo_username: huxpro
 zhihu_username: huxpro
@@ -20,8 +20,8 @@ twitter_username: huxpro
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+# 构建设置
+# 从 2016 年起，GitHub Pages 不再支持 'pygments'。请使用 'rouge' 进行代码高亮。
 highlighter: rouge
 permalink: pretty
 paginate: 10
@@ -34,23 +34,23 @@ exclude:
     "README.md",
     "README.zh.md",
   ]
-anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
-# If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN
+anchorjs: true # 如果你想自定义锚点，请查看 `post.html` 的第 181 行
+# 如果在中国遇到时区问题（例如 issue #68），请取消注释以使用：
+timezone: CN
 
 # Gems
-# from PR#40, to support local preview for Jekyll 3.0
-# make sure you have this gem installed
+# 来自 PR#40，支持 Jekyll 3.0 的本地预览
+# 确保已安装此 gem
 # `$ gem install jekyll-paginate`
 plugins: [jekyll-paginate]
 
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
+# Markdown 设置
+# 将 redcarpet 替换为 kramdown
+# 虽然 redcarpet 可以自动高亮代码，但由于缺少 header-id 导致无法生成目录，因此我切换到 kramdown
+# 文档：http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 kramdown:
-  input: GFM # use Github Flavored Markdown !important
+  input: GFM # 使用 GitHub 风格的 Markdown ！重要
   syntax_highlighter_opts:
     span:
       line_numbers: false
@@ -58,37 +58,37 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-# Disqus settings
+# Disqus 设置
 disqus_username: hux
 
-# Netease settings
+# 网易设置
 netease_comment: false
 
-# Analytics settings
-# Baidu Analytics
-# ba_track_id: [your track id]
+# 分析统计设置
+# 百度统计
+# ba_track_id: [你的统计 ID]
 
-# Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
+# 谷歌分析
+ga_track_id: "UA-49627206-1" # 格式：UA-xxxxxx-xx
 ga_domain: huangxuan.me
 
-# Sidebar settings
-sidebar: true # whether or not using Sidebar.
+# 侧边栏设置
+sidebar: true # 是否使用侧边栏
 sidebar-about-description: "要做一个有 swag 的程序员 <br> React Team @ Meta"
-sidebar-avatar: https://thirdqq.qlogo.cn/ek_qqapp/AQJibWmyMichBgZM60k6HHeic38m5pB8ry2OVabicD9PWZqQcVANnzSuAxib052HHOhCzwzxSN6iaPuD5MDlDAGdZRibld29R6nwVcWVDtfcn1Tj7lFOYjFzME/0 # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://thirdqq.qlogo.cn/ek_qqapp/AQJibWmyMichBgZM60k6HHeic38m5pB8ry2OVabicD9PWZqQcVANnzSuAxib052HHOhCzwzxSN6iaPuD5MDlDAGdZRibld29R6nwVcWVDtfcn1Tj7lFOYjFzME/0 # 使用绝对 URL，因为它会在 `/` 和 `/about/` 中使用
 
-# Featured Tags
-featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+# 推荐标签
+featured-tags: true # 是否使用推荐标签
+featured-condition-size: 1 # 当标签数量大于此值时，该标签将被推荐
 
-# Progressive Web Apps
+# 渐进式 Web 应用
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-# MathJax rendering for layout:page (e.g. post preview)
+# MathJax 渲染，用于 layout:page（例如文章预览）
 page-mathjax: false
 
-# Friends
+# 友情链接
 friends:
   [
     { title: "乱序（Midare）", href: "http://mida.re/" },
